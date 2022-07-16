@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <form action="/" method="post">
+          <input name="city" type="text" class="ghost-input" placeholder="Şehir Adı giriniz" required>
+          <input type="submit" class="ghost-button" value="Havayı Kontrol Et">
+        </form>
+        <% if(weather !== null){ %>
+          <p><%= weather %></p>
+        <% } %>
+
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
+      </fieldset>
+    </div>
+  </body>
+</html>
